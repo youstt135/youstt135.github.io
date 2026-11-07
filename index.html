@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amin Mansouri, PhD student at EPFL. Research on reasoning, alignment, and AI for scientific discovery.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://amansouri3476.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+  <title>Amin Mansouri</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main id="main">
+    <header class="profile">
+      <div class="bio">
+        <h1>Amin Mansouri</h1>
+        <p>I’m a PhD student in Computer Science at <a href="https://www.epfl.ch/">EPFL</a>, advised by <a href="https://www.caglar.ai/">Caglar Gulcehre</a> and <a href="https://pschwllr.github.io/">Philippe Schwaller</a> in the CLAIRE and LIAC labs.</p>
+        <p>I work on <strong>reasoning and alignment for scientific discovery</strong>: how models seek information, plan experiments, and reason over scientific data. Previously, I studied causal representations and length and compositional generalization.</p>
+        <p>Before EPFL, I completed my master’s at Mila and Université de Montréal, and my bachelor’s in Electrical Engineering at Sharif University of Technology.</p>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="mailto:amin.mansouri@epfl.ch">Email</a><span>/</span>
+          <a href="https://scholar.google.com/citations?user=9aNdCL4AAAAJ&amp;hl=en">Scholar</a><span>/</span>
+          <a href="https://github.com/amansouri3476">GitHub</a><span>/</span>
+          <a href="https://www.linkedin.com/in/amansouri3476/">LinkedIn</a><span>/</span>
+          <a href="mailto:amin.mansouri@epfl.ch?subject=CV%20request">CV by email</a>
+        </nav>
+      </div>
+      <img class="portrait" src="assets/amin-portrait.webp" width="555" height="699" alt="Amin Mansouri" fetchpriority="high">
+    </header>
+
+    <section id="research" aria-labelledby="research-heading">
+      <div class="section-heading"><h2 id="research-heading">Research</h2><a href="#earlier">Earlier papers ↓</a></div>
+      <p class="research-intro">Selected work on scientific reasoning and the representations that support it. <span class="contribution">* Equal contribution.</span></p>
+
+      <article class="paper" id="beyond-accuracy">
+        <a class="thumb" href="assets/beyond-accuracy-figure1.webp" data-caption="Beyond Accuracy — Figure 1. The agent–environment loop and diagnostics of behavior and reasoning." aria-label="View Figure 1 from Beyond Accuracy">
+          <img src="assets/beyond-accuracy-figure1.webp" alt="Beyond Accuracy: agent–environment loop, behavior diagnostics, and four reasoning steps." width="1800" height="599">
+        </a>
+        <div class="paper-text">
+          <h3><a href="https://openreview.net/forum?id=VZAGnyBRvm">Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents</a></h3>
+          <p class="authors">Ryo Kuroki*, <strong>Amin Mansouri*</strong>, Philippe Schwaller</p>
+          <p class="venue"><strong>NeurIPS 2026</strong> · Evaluations and Datasets</p>
+          <p class="links"><a href="https://openreview.net/pdf?id=VZAGnyBRvm">paper</a><span>/</span><a href="https://schwallergroup.github.io/beyond-accuracy/">project page</a><span>/</span><a href="https://github.com/schwallergroup/beyond-accuracy-bench">code</a></p>
+          <p class="description">Diagnosing how agents update beliefs and design experiments, alongside whether they identify the right mechanism.</p>
+        </div>
+      </article>
+
+      <article class="paper" id="rxnhaystack">
+        <a class="thumb" href="assets/rxnhaystack-workshop-figure1.webp" data-caption="RxnHaystack — Figure 1 from the public ML4Molecules workshop version. For the original evaluation protocol, see the linked paper." aria-label="View Figure 1 from RxnHaystack"><img src="assets/rxnhaystack-workshop-figure1.webp" alt="The published RxnHaystack workshop Figure 1, comparing evaluated interfaces across four task tiers." width="892" height="671" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://openreview.net/forum?id=SBxtTERWkl">RxnHaystack: Separating Scale from Chemical Reasoning in Reaction Corpora</a></h3>
+          <p class="authors">Sathvik Bhagavan*, <strong>Amin Mansouri*</strong>, Xuan Vu Nguyen, Philippe Schwaller</p>
+          <p class="venue">ML4Molecules workshop, NeurIPS 2026</p>
+          <p class="links"><a href="https://openreview.net/pdf?id=SBxtTERWkl">paper</a></p>
+          <p class="description">Separating corpus access, structured execution, and chemical reasoning in large reaction datasets.</p>
+        </div>
+      </article>
+
+      <article class="paper" id="coq">
+        <a class="thumb" href="assets/coq-figure1.webp" data-caption="Chain-of-Questions — Figure 1 from the public ICML AI4Science workshop paper: an illustrated comparison of question-driven and chain-of-thought reasoning on one problem." aria-label="View Figure 1 from Chain-of-Questions"><img src="assets/coq-figure1.webp" alt="A worked chemistry example contrasting chain-of-thought with explicit questions about missing mechanistic information." width="1076" height="747" loading="lazy"></a>
+        <div class="paper-text">
+          <h3><a href="https://openreview.net/forum?id=o74e2eQb07">Asking the Right Question: Epistemic Inquiry as a Learnable Reasoning Skill for Scientific Discovery</a></h3>
+          <p class="authors"><strong>Amin Mansouri</strong>, Caglar Gulcehre, Philippe Schwaller</p>
+          <p class="venue">AI4Science workshop, ICML 2026</p>
+          <p class="links"><a href="https://openreview.net/pdf?id=o74e2eQb07">paper</a></p>
+          <p class="description">Chain-of-Questions: studying how models identify information needs, obtain answers, and use what they learn.</p>
+        </div>
+      </article>
+
+      <article class="paper" id="evotune">
+        <a class="thumb" href="assets/evotune-figure1.webp" data-caption="EvoTune — Figure 1. Evolutionary search provides feedback for updating the language model." aria-label="View Figure 1 from EvoTune">
+          <img src="assets/evotune-figure1.webp" alt="EvoTune: a loop connecting program generation, evaluation, evolutionary search, and reinforcement learning." width="1210" height="560" loading="lazy">
+        </a>
+        <div class="paper-text">
+          <h3><a href="https://arxiv.org/abs/2504.05108">Algorithm Discovery With LLMs: Evolutionary Search Meets Reinforcement Learning</a></h3>
+          <p class="authors">Anja Surina, <strong>Amin Mansouri</strong>, Lars Quaedvlieg, Amal Seddas, Maryna Viazovska, Emmanuel Abbe, Caglar Gulcehre</p>
+          <p class="venue"><strong>COLM 2025</strong></p>
+          <p class="links"><a href="https://arxiv.org/pdf/2504.05108">paper</a><span>/</span><a href="https://claire-labo.github.io/EvoTune/">project page</a></p>
+          <p class="description">Learning from discovered programs to improve the language model’s evolutionary search.</p>
+        </div>
+      </article>
+
+      <article class="paper" id="object-centric">
+        <a class="thumb" href="assets/object-centric-figure1.webp" data-caption="Object-centric architectures — Figure 1. Object ambiguity and recovery of causal representations." aria-label="View Figure 1 from Object-centric architectures">
+          <img src="assets/object-centric-figure1.webp" alt="Colored objects and a plot of causal representation recovery as the number of objects increases." width="1300" height="494" loading="lazy">
+        </a>
+        <div class="paper-text">
+          <h3><a href="https://arxiv.org/abs/2310.19054">Object-centric architectures enable efficient causal representation learning</a></h3>
+          <p class="authors"><strong>Amin Mansouri</strong>, Jason Hartford, Yan Zhang, Yoshua Bengio</p>
+          <p class="venue"><strong>ICLR 2024</strong></p>
+          <p class="links"><a href="https://arxiv.org/pdf/2310.19054">paper</a><span>/</span><a href="https://github.com/amansouri3476/OC-CRL">code</a></p>
+          <p class="description">Learning causal representations of multiple objects using object-centric structure and sparse perturbations.</p>
+        </div>
+      </article>
+
+      <details class="earlier" id="earlier">
+        <summary>Earlier papers & thesis</summary>
+        <div id="earlier-list">
+          <article class="paper paper--text"><div class="paper-text"><h3><a href="https://openreview.net/forum?id=N3vDM8CafN">Time-Series as Feedback: Evaluating Adaptive Reasoning in LLM Agents</a></h3><p class="authors">Ryo Kuroki, <strong>Amin Mansouri</strong>, Philippe Schwaller</p><p class="venue">Time Series in the Age of Large Models workshop, ICLR 2026</p><p class="links"><a href="https://openreview.net/forum?id=N3vDM8CafN">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://arxiv.org/abs/2310.02854">Multi-Domain Causal Representation Learning via Weak Distributional Invariances</a></h3><p class="authors">Kartik Ahuja*, <strong>Amin Mansouri*</strong>, Yixin Wang</p><p class="venue">AISTATS 2024</p><p class="links"><a href="https://arxiv.org/abs/2310.02854">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://arxiv.org/abs/2402.04875">On Provable Length and Compositional Generalization</a></h3><p class="authors">Kartik Ahuja, <strong>Amin Mansouri</strong></p><p class="venue">Preprint, 2024 · ICML 2024 workshop</p><p class="links"><a href="https://arxiv.org/abs/2402.04875">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://arxiv.org/abs/2402.10575">Symbolic Autoencoding for Self-Supervised Sequence Learning</a></h3><p class="authors">Mohammad Hossein Amani, <strong>Amin Mansouri*</strong>, Nicolas Baldwin*, Martin Josifoski, Maxime Peyrard, Robert West</p><p class="venue">Preprint, 2024 · ICML 2024 workshop</p><p class="links"><a href="https://arxiv.org/abs/2402.10575">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://openreview.net/forum?id=pmGLxILGvO">Reusable Slotwise Mechanisms</a></h3><p class="authors">Trang Nguyen, <strong>Amin Mansouri</strong>, Kanika Madan, Nguyen Duy Khuong, Kartik Ahuja, Dianbo Liu, Yoshua Bengio</p><p class="venue">NeurIPS 2023</p><p class="links"><a href="https://openreview.net/forum?id=pmGLxILGvO">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://drive.google.com/file/d/1i7sv4ALTIIm4vYwAcImojt9lgAandf8l/view">Toward Causal Representation and Structure Learning</a></h3><p class="authors"><strong>Amin Mansouri</strong></p><p class="venue">MSc thesis · Dean’s Honor List</p><p class="links"><a href="https://drive.google.com/file/d/1i7sv4ALTIIm4vYwAcImojt9lgAandf8l/view">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://openreview.net/forum?id=OLt4rH0Usau">Object-Centric Causal Representation Learning</a></h3><p class="authors"><strong>Amin Mansouri</strong>, Jason Hartford, Kartik Ahuja, Yoshua Bengio</p><p class="venue">NeurReps workshop, NeurIPS 2022</p><p class="links"><a href="https://openreview.net/forum?id=OLt4rH0Usau">paper</a></p></div></article>
+<article class="paper paper--text"><div class="paper-text"><h3><a href="https://www.gatsby.ucl.ac.uk/~balaji/udl2021/accepted-papers/UDL2021-paper-090.pdf">Identifying Invariant and Sparse Predictors in High-dimensional Data</a></h3><p class="authors"><strong>Amin Mansouri</strong>, Sean Spinney, Amin Memarian, Patricia Conrod, Irina Rish</p><p class="venue">Uncertainty & Robustness in Deep Learning workshop, ICML 2021</p><p class="links"><a href="https://www.gatsby.ucl.ac.uk/~balaji/udl2021/accepted-papers/UDL2021-paper-090.pdf">paper</a></p></div></article>
+        </div>
+      </details>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">A little more</h2>
+      <p>Outside research, I play piano, hike and ski in the Swiss Alps, and sail on Lake Geneva.</p>
+      <p>I’m interested in research collaborations on reasoning, alignment, and AI for science. EPFL students are welcome to get in touch about semester projects.</p>
+      <p><a href="mailto:amin.mansouri@epfl.ch">amin.mansouri@epfl.ch</a> <span class="separator">·</span> <a href="https://x.com/m_amin_mansouri">X / Twitter</a></p>
+    </section>
+    <footer><a href="https://github.com/amansouri3476/amansouri3476.github.io">Website source</a><span>Layout inspired by <a href="https://jonbarron.info/">Jon Barron</a>.</span></footer>
+  </main>
+  <dialog aria-label="Paper figure" aria-describedby="figure-caption" id="figure-dialog"><form method="dialog"><button aria-label="Close figure">Close ×</button></form><img id="figure-image" alt=""><p id="figure-caption"></p></dialog>
+</body>
+</html>
