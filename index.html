@@ -1,164 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Amin Mansouri, PhD student at EPFL. Research on reasoning, alignment, and AI for scientific discovery.">
-  <meta name="theme-color" content="#fafbf9">
-  <link rel="canonical" href="https://amin-mansouri.github.io/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="site.js" defer></script>
-  <title>Amin Mansouri</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tenten - Variable CJK Dot Font for Chinese, Japanese and Korean</title>
+<meta name="description" content="tenten is a variable CJK dot font that draws Traditional Chinese, Simplified Chinese, Japanese and Korean characters on a 12 x 12 lattice. Download the font for Windows and use it in OpenType and WOFF2 formats.">
+<meta name="keywords" content="bitmap-font, chinese, cjk, dot-matrix, font, font-generator, fusion-pixel-font, hangul, japanese, korean, opentype, pixel-font, rust, simplified-chinese, traditional-chinese, typography, variable-font, woff2">
+<meta name="author" content="tenten">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4b3f9e">
+<link rel="canonical" href="https://github.com/youstt135/tenten">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tenten - Variable CJK Dot Font for Chinese, Japanese and Korean">
+<meta property="og:description" content="A variable CJK dot font for Traditional Chinese, Simplified Chinese, Japanese and Korean, built on a 12 x 12 lattice with Rust. Free download for Windows.">
+<meta property="og:url" content="https://github.com/youstt135/tenten">
+<meta property="og:site_name" content="tenten">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="tenten - Variable CJK Dot Font for Chinese, Japanese and Korean">
+<meta name="twitter:description" content="A variable CJK dot font on a 12 x 12 lattice covering Traditional Chinese, Simplified Chinese, Japanese and Korean. Built in Rust.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "tenten",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Windows",
+  "description": "A variable CJK dot font: Traditional Chinese, Simplified Chinese, Japanese and Korean on a 12 x 12 lattice, built in Rust.",
+  "url": "https://github.com/youstt135/tenten",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    color: #22252b;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px 0;
+    color: #1b1d24;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.35rem;
+    line-height: 1.35;
+    margin: 44px 0 12px 0;
+    color: #1b1d24;
+    font-weight: 700;
+  }
+  p { margin: 0 0 16px 0; }
+  ul, ol { margin: 0 0 18px 0; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  strong { color: #1b1d24; }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(24, 27, 38, 0.07);
+    padding: 28px 26px;
+    margin: 0 0 28px 0;
+  }
+  .btn-primary {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(75, 63, 158, 0.28);
+    background: linear-gradient(135deg, #5b46c4 0%, #2fa8a0 100%);
+  }
+  .btn-primary:hover { opacity: 0.93; }
+  .lead { font-size: 1.1rem; color: #3d414c; }
+  .meta-line { font-size: 0.92rem; color: #63697a; margin-top: 12px; }
+  a { color: #4b3f9e; }
+  .divider {
+    height: 1px;
+    background: #e4e6ee;
+    border: 0;
+    margin: 40px 0;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6a7080;
+    padding: 10px 0 48px 0;
+  }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.2rem; }
+    .card { padding: 22px 18px; }
+    .btn-primary { display: block; text-align: center; padding: 15px 18px; }
+  }
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <main id="main">
-    <header class="profile">
-      <div class="bio">
-        <p class="eyebrow">EPFL · Lausanne, Switzerland</p><h1>Amin Mansouri</h1>
-        <p>I’m a PhD student in Computer Science at <a href="https://www.epfl.ch/">EPFL</a>, advised by <a href="https://www.caglar.ai/">Caglar Gulcehre</a> and <a href="https://pschwllr.github.io/">Philippe Schwaller</a> in the CLAIRE and LIAC labs.</p>
-        <p>I work on <strong>reasoning and alignment for scientific discovery</strong>: how models seek information, plan experiments, and reason over scientific data. Previously, I studied causal representations and length and compositional generalization.</p>
-        <p>Before EPFL, I completed my master’s at Mila and Université de Montréal, and my bachelor’s in Electrical Engineering at Sharif University of Technology.</p>
-        <nav class="profile-links" aria-label="Profile links">
-          <a href="mailto:amin.mansouri@epfl.ch">Email</a><span>/</span>
-          <a href="https://scholar.google.com/citations?user=9aNdCL4AAAAJ&amp;hl=en">Scholar</a><span>/</span>
-          <a href="https://github.com/amin-mansouri">GitHub</a><span>/</span>
-          <a href="https://www.linkedin.com/in/amansouri3476/">LinkedIn</a><span>/</span>
-          <a href="mailto:amin.mansouri@epfl.ch?subject=CV%20request">CV by email</a>
-        </nav>
-      </div>
-      <img class="portrait" src="assets/amin-portrait.webp" width="555" height="699" alt="Amin Mansouri" fetchpriority="high">
-    </header>
+<main style="max-width: 820px; margin: 0 auto; padding: 40px 20px 20px 20px;">
 
+<h1>🖋️ tenten - Beautiful CJK Dot Fonts, Made Easy</h1>
 
-    <nav class="section-nav" aria-label="Website sections">
-      <a id="tab-research" href="#research">Research</a>
-      <a id="tab-news" href="#news">News</a>
-      <a id="tab-about" href="#about">About</a>
-      <a id="tab-contact" href="#contact">Get in touch</a>
-    </nav>
-    <section class="panel" id="research" aria-labelledby="research-heading">
-      <div class="section-heading"><h2 id="research-heading">Research</h2><span class="section-note">* Equal contribution</span></div>
-      <div class="latest"><span class="latest-label">Latest</span><p>Beyond Accuracy at <strong>NeurIPS 2026</strong> · RxnHaystack at <strong>ML4Molecules</strong> <a href="#news" class="text-arrow">More news ↗</a></p></div>
-      <p class="research-intro">Scientific reasoning, generalization, and causal representations. Click a figure to take a closer look.</p>
-      <article class="paper" id="beyond-accuracy">
-        <a class="thumb" href="assets/beyond-accuracy-figure1.webp" data-caption="Beyond Accuracy — Figure 1. The agent–environment loop and diagnostics of behavior and reasoning." aria-label="View Figure 1 from Beyond Accuracy">
-          <img src="assets/beyond-accuracy-figure1.webp" alt="Beyond Accuracy: agent–environment loop, behavior diagnostics, and four reasoning steps." width="1800" height="599">
-        </a>
-        <div class="paper-text">
-          <h3><a href="https://schwallergroup.github.io/beyond-accuracy/index.html">Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents</a></h3>
-          <p class="authors">Ryo Kuroki*, <strong>Amin Mansouri*</strong>, Philippe Schwaller</p>
-          <p class="venue"><strong>NeurIPS 2026</strong> · Evaluations and Datasets</p>
-          <p class="links"><a href="https://openreview.net/pdf?id=VZAGnyBRvm">paper</a><span>/</span><a href="https://schwallergroup.github.io/beyond-accuracy/index.html">project page</a><span>/</span><a href="https://github.com/schwallergroup/beyond-accuracy-bench">code</a></p>
-          <p class="description">Diagnosing how agents update beliefs and design experiments, alongside whether they identify the right mechanism.</p>
-        </div>
-      </article>
-<article class="paper" id="rxnhaystack">
-        <a class="thumb" href="assets/rxnhaystack-workshop-figure1.webp" data-caption="RxnHaystack — Figure 1 from the public ML4Molecules workshop version. For the original evaluation protocol, see the linked paper." aria-label="View Figure 1 from RxnHaystack"><img src="assets/rxnhaystack-workshop-figure1.webp" alt="The published RxnHaystack workshop Figure 1, comparing evaluated interfaces across four task tiers." width="892" height="671" loading="lazy"></a>
-        <div class="paper-text">
-          <h3><a href="https://schwallergroup.github.io/rxnhaystack-site/index.html">RxnHaystack: Beyond Needles in Long-Context Structured Scientific Data</a></h3>
-          <p class="authors"><strong>Amin Mansouri*</strong>, Sathvik Bhagavan*, Xuan Vu Nguyen, Philippe Schwaller</p>
-          <p class="venue">ML4Molecules workshop, NeurIPS 2026</p>
-          <p class="links"><a href="https://openreview.net/pdf?id=SBxtTERWkl">workshop paper</a><span>/</span><a href="https://schwallergroup.github.io/rxnhaystack-site/index.html">project page</a></p>
-          <p class="description">Separating corpus access, structured execution, and chemical reasoning in large reaction datasets.</p>
-        </div>
-      </article>
-<article class="paper" id="coq">
-        <a class="thumb" href="assets/coq-figure1.webp" data-caption="Chain-of-Questions — Figure 1 from the public ICML AI4Science workshop paper: an illustrated comparison of question-driven and chain-of-thought reasoning on one problem." aria-label="View Figure 1 from Chain-of-Questions"><img src="assets/coq-figure1.webp" alt="A worked chemistry example contrasting chain-of-thought with explicit questions about missing mechanistic information." width="1076" height="747" loading="lazy"></a>
-        <div class="paper-text">
-          <h3><a href="https://openreview.net/forum?id=o74e2eQb07">Asking the Right Question: Epistemic Inquiry as a Learnable Reasoning Skill for Scientific Discovery</a></h3>
-          <p class="authors"><strong>Amin Mansouri</strong>, Caglar Gulcehre, Philippe Schwaller</p>
-          <p class="venue">AI4Science workshop, ICML 2026</p>
-          <p class="links"><a href="https://openreview.net/pdf?id=o74e2eQb07">paper</a></p>
-          <p class="description">Chain-of-Questions: studying how models identify information needs, obtain answers, and use what they learn.</p>
-        </div>
-      </article>
-<article class="paper" id="evotune">
-        <a class="thumb" href="assets/evotune-figure1.webp" data-caption="EvoTune — Figure 1. Evolutionary search provides feedback for updating the language model." aria-label="View Figure 1 from EvoTune">
-          <img src="assets/evotune-figure1.webp" alt="EvoTune: a loop connecting program generation, evaluation, evolutionary search, and reinforcement learning." width="1210" height="560" loading="lazy">
-        </a>
-        <div class="paper-text">
-          <h3><a href="https://claire-labo.github.io/EvoTune/">Algorithm Discovery With LLMs: Evolutionary Search Meets Reinforcement Learning</a></h3>
-          <p class="authors">Anja Surina, <strong>Amin Mansouri</strong>, Lars Quaedvlieg, Amal Seddas, Maryna Viazovska, Emmanuel Abbe, Caglar Gulcehre</p>
-          <p class="venue"><strong>COLM 2025</strong></p>
-          <p class="links"><a href="https://arxiv.org/pdf/2504.05108">paper</a><span>/</span><a href="https://claire-labo.github.io/EvoTune/">project page</a></p>
-          <p class="description">Learning from discovered programs to improve the language model’s evolutionary search.</p>
-        </div>
-      </article>
-<article class="paper" id="object-centric">
-        <a class="thumb" href="assets/object-centric-figure1.webp" data-caption="Object-centric architectures — Figure 1. Object ambiguity and recovery of causal representations." aria-label="View Figure 1 from Object-centric architectures">
-          <img src="assets/object-centric-figure1.webp" alt="Colored objects and a plot of causal representation recovery as the number of objects increases." width="1300" height="494" loading="lazy">
-        </a>
-        <div class="paper-text">
-          <h3><a href="https://arxiv.org/abs/2310.19054">Object-centric architectures enable efficient causal representation learning</a></h3>
-          <p class="authors"><strong>Amin Mansouri</strong>, Jason Hartford, Yan Zhang, Yoshua Bengio</p>
-          <p class="venue"><strong>ICLR 2024</strong></p>
-          <p class="links"><a href="https://arxiv.org/pdf/2310.19054">paper</a><span>/</span><a href="https://github.com/amin-mansouri/OC-CRL">code</a></p>
-          <p class="description">Learning causal representations of multiple objects using object-centric structure and sparse perturbations.</p>
-        </div>
-      </article>
-<article class="paper" id="2310.02854">
-  <a class="thumb" href="assets/md-crl-figure1.webp" data-caption="MD-CRL — Figure 1. Alphabet styles remain stable across domains while their colors change." aria-label="Enlarge Figure 1 from Multi-Domain Causal Representation Learning via Weak Distributional Invariances"><img src="assets/md-crl-figure1.webp" alt="MD-CRL — Figure 1. Alphabet styles remain stable across domains while their colors change." width="425" height="265" loading="lazy"></a>
-  <div class="paper-text"><h3><a href="https://arxiv.org/abs/2310.02854">Multi-Domain Causal Representation Learning via Weak Distributional Invariances</a></h3><p class="authors">Kartik Ahuja*, <strong>Amin Mansouri*</strong>, Yixin Wang</p><p class="venue"><strong>AISTATS 2024</strong></p><p class="links"><a href="https://arxiv.org/pdf/2310.02854">paper</a><span>/</span><a href="https://github.com/facebookresearch/MD-CRL">code</a></p><p class="description">Recovering stable causal factors by exploiting what remains invariant across domains.</p></div>
-</article>
-<article class="paper" id="2402.04875">
-  <a class="thumb" href="assets/length-generalization-figure1.webp" data-caption="Length and compositional generalization — Figure 1. Training and test support for new combinations and longer sequences." aria-label="Enlarge Figure 1 from On Provable Length and Compositional Generalization"><img src="assets/length-generalization-figure1.webp" alt="Length and compositional generalization — Figure 1. Training and test support for new combinations and longer sequences." width="800" height="350" loading="lazy"></a>
-  <div class="paper-text"><h3><a href="https://arxiv.org/abs/2402.04875">On Provable Length and Compositional Generalization</a></h3><p class="authors">Kartik Ahuja, <strong>Amin Mansouri</strong></p><p class="venue">Preprint, 2024 · ICML 2024 workshop</p><p class="links"><a href="https://arxiv.org/pdf/2402.04875">paper</a><span>/</span><a href="https://github.com/facebookresearch/Length-and-Compositional-Generalization">code</a></p><p class="description">Understanding when sequence models can generalize to new combinations and longer sequences.</p></div>
-</article>
-<article class="paper" id="2402.10575">
-  <a class="thumb" href="assets/symae-figure1.webp" data-caption="Symbolic Autoencoding — Figure 1. Two sequence models learn from parallel and unpaired data through a discrete bottleneck." aria-label="Enlarge Figure 1 from Symbolic Autoencoding for Self-Supervised Sequence Learning"><img src="assets/symae-figure1.webp" alt="Symbolic Autoencoding — Figure 1. Two sequence models learn from parallel and unpaired data through a discrete bottleneck." width="675" height="393" loading="lazy"></a>
-  <div class="paper-text"><h3><a href="https://arxiv.org/abs/2402.10575">Symbolic Autoencoding for Self-Supervised Sequence Learning</a></h3><p class="authors">Mohammad Hossein Amani, Nicolas Mario Baldwin, <strong>Amin Mansouri</strong>, Martin Josifoski, Maxime Peyrard, Robert West</p><p class="venue">Preprint, 2024 · ICML 2024 workshop</p><p class="links"><a href="https://arxiv.org/pdf/2402.10575">paper</a><span>/</span><a href="https://github.com/epfl-dlab/symbol-lab">code</a></p><p class="description">Learning mappings between symbolic sequences using scarce parallel data and abundant unpaired data.</p></div>
-</article>
-<article class="paper" id="2302.10503">
-  <a class="thumb" href="assets/rsm-figure1.webp" data-caption="Reusable Slotwise Mechanisms — Figure 1. Future prediction, contextual information, and reusable mechanisms for updating object slots." aria-label="Enlarge Figure 1 from Reusable Slotwise Mechanisms"><img src="assets/rsm-figure1.webp" alt="Reusable Slotwise Mechanisms — Figure 1. Future prediction, contextual information, and reusable mechanisms for updating object slots." width="1060" height="756" loading="lazy"></a>
-  <div class="paper-text"><h3><a href="https://arxiv.org/abs/2302.10503">Reusable Slotwise Mechanisms</a></h3><p class="authors">Trang Nguyen, <strong>Amin Mansouri</strong>, Kanika Madan, Khuong Duy Nguyen, Kartik Ahuja, Dianbo Liu, Yoshua Bengio</p><p class="venue"><strong>NeurIPS 2023</strong></p><p class="links"><a href="https://arxiv.org/pdf/2302.10503">paper</a><span>/</span><a href="https://github.com/trangnnp/RSM">code</a></p><p class="description">Reusing mechanisms across object slots to predict the dynamics of interacting objects.</p></div>
-</article>
-      <article class="thesis" id="thesis"><p class="eyebrow">Master’s thesis · 2023</p><h3><a href="https://drive.google.com/file/d/1i7sv4ALTIIm4vYwAcImojt9lgAandf8l/view">Toward Causal Representation and Structure Learning</a></h3><p>Mila · Université de Montréal · Dean’s Honor List</p><a href="https://drive.google.com/file/d/1i7sv4ALTIIm4vYwAcImojt9lgAandf8l/view">thesis ↗</a></article>
-    </section>
-    <section class="panel" id="news" aria-labelledby="news-heading">
-      <div class="section-heading"><h2 id="news-heading">News & updates</h2><span class="section-note">From the lab and beyond</span></div>
-      <ul class="timeline">
-        <li><time datetime="2026-09">Sep 2026</time><p><a href="#beyond-accuracy">Beyond Accuracy</a> accepted to NeurIPS 2026, Evaluations and Datasets. <a href="#rxnhaystack">RxnHaystack</a> accepted to the ML4Molecules workshop.</p></li>
-        <li><time datetime="2026-07">Jul 2026</time><p><a href="#coq">Asking the Right Question</a> accepted to the AI4Science workshop at ICML 2026.</p></li>
-        <li><time datetime="2026-06">Jun 2026</time><p>Gave an invited research talk at Chalmers University of Technology.</p></li>
-        <li><time datetime="2025-07">Jul 2025</time><p><a href="#evotune">EvoTune</a> accepted to COLM 2025!</p></li>
-        <li><time datetime="2024-07">Jul 2024</time><p>Our work on <a href="#2402.04875">length and compositional generalization</a> and <a href="#2402.10575">symbolic autoencoding</a> appeared at ICML workshops.</p></li>
-        <li><time datetime="2024-01">Jan 2024</time><p>Our <a href="#object-centric">object-centric CRL paper</a> accepted to ICLR, and <a href="#2310.02854">MD-CRL</a> to AISTATS.</p></li>
-        <li><time datetime="2023-10">Oct 2023</time><p>Completed my master’s thesis with the highest distinction. Later recognized on the Dean’s Honor List.</p></li>
-        <li><time datetime="2023-09">Sep 2023</time><p><a href="#2302.10503">Reusable Slotwise Mechanisms</a> accepted to NeurIPS 2023.</p></li>
-      </ul>
-      <details class="archive"><summary>Earlier updates</summary><ul class="timeline">
-        <li><time datetime="2022-01">Jan 2022</time><p>Joined the Mila Entrepreneurs cohort.</p></li>
-        <li><time datetime="2021-06">Summer 2021</time><p>Research internship at EPFL’s dlab with Robert West, supported by Summer@EPFL.</p></li>
-        <li><time datetime="2020-09">Sep 2020</time><p>Started my master’s at Mila and Université de Montréal.</p></li>
-        <li><time datetime="2020-07">Jul 2020</time><p>Graduated from Sharif University of Technology.</p></li>
-        <li><time datetime="2019-08">Aug 2019</time><p>Research internship at RIKEN AIP in Japan.</p></li>
-        <li><time datetime="2019-02">Feb 2019</time><p>Started learning piano.</p></li>
-        <li><time datetime="2018-07">Jul 2018</time><p>Research internship at the Institute of Neuroinformatics, ETH Zurich / University of Zurich.</p></li>
-        <li><time datetime="2017">2017</time><p>Deputy Director of Sharif’s Electrical Engineering student association.</p></li>
-      </ul></details>
-    </section>
-    <section class="panel" id="about" aria-labelledby="about-heading">
-      <div class="section-heading"><h2 id="about-heading">A little more about me</h2></div>
-      <p>My research connects reasoning, search and planning, epistemic uncertainty, and AI for scientific discovery. Earlier, I worked on causal representation learning and length and compositional generalization.</p>
-      <h3 class="subheading">Education</h3>
-      <dl class="education"><div><dt>EPFL</dt><dd>PhD in Computer Science · CLAIRE & LIAC</dd></div><div><dt>Mila · Université de Montréal</dt><dd>MSc, 2020–2023 · Dean’s Honor List</dd></div><div><dt>Sharif University of Technology</dt><dd>BSc in Electrical Engineering, 2015–2020</dd></div></dl>
-      <h3 class="subheading">Honors & awards</h3>
-      <ul class="awards"><li><span>2025</span> Apple AI/ML Fellowship finalist · ML Algorithms and Architectures</li><li><span>2024</span> Apple AI/ML Fellowship finalist · ML Theory</li><li><span>2024</span> Dean’s Honor List · Université de Montréal</li><li><span>2023</span> EPFL Doctoral Fellowship</li><li><span>2021–23</span> Université de Montréal excellence scholarships for research</li><li><span>2021</span> Summer@EPFL Fellowship</li><li><span>2020</span> Microsoft Excellence Research Scholarship</li><li><span>2020</span> Université de Montréal Responsible AI Scholarship</li><li><span>2014 / 13</span> Silver / bronze medals · National Astronomy and Astrophysics Olympiad</li></ul>
-      <div class="personal-note"><p class="eyebrow">Away from the desk</p><p>I play piano, hike and ski in the Swiss Alps, and sail on Lake Geneva.</p></div>
-    </section>
-    <section class="panel" id="contact" aria-labelledby="contact-heading">
-      <div class="section-heading"><h2 id="contact-heading">Let’s get in touch</h2></div>
-      <p class="contact-email"><a href="mailto:amin.mansouri@epfl.ch">amin.mansouri@epfl.ch ↗</a></p>
-      <div class="contact-block"><h3>Research & industry</h3><p>I’m interested in research collaborations and industry opportunities on reasoning, alignment, and AI for science.</p></div>
-      <div class="contact-block"><h3>Student projects</h3><p>EPFL students are welcome to contact me about semester projects. For students elsewhere, projects should be feasible with the computing resources available to you; I’m unable to provide external access to our compute.</p></div>
-      <div class="contact-block"><h3>Feedback</h3><p>I welcome constructive feedback, professional or personal. You can share it through <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPaJnC4EBDj1NHar9o13Y79kwykMM6Ofm56BE-A565PSKYcg/viewform?usp=dialog">this feedback form ↗</a>.</p></div>
-      <p class="profile-links"><a href="mailto:amin.mansouri@epfl.ch?subject=CV%20request">Request my CV</a><span>/</span><a href="https://www.linkedin.com/in/amansouri3476/">LinkedIn</a><span>/</span><a href="https://x.com/m_amin_mansouri">X / Twitter</a></p>
-    </section>
-    <aside class="visitors" id="visitors" hidden aria-label="Website visitors"><div><p class="eyebrow">Thanks for stopping by</p><p>Visitors to this website <span>since November 2026</span></p></div><div id="visitor-map"></div></aside>
-    <footer><a href="https://github.com/amin-mansouri/amin-mansouri.github.io">Website source ↗</a><span>Inspired by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://anjasurina.github.io/">Anja Surina</a>.</span></footer>
-  </main>
-  <dialog aria-label="Paper figure" aria-describedby="figure-caption" id="figure-dialog"><form method="dialog"><button aria-label="Close figure">Close ×</button></form><img id="figure-image" alt=""><p id="figure-caption"></p></dialog>
+<p class="lead">A variable dot font that keeps Traditional Chinese, Simplified Chinese, Japanese and Korean characters crisp and readable on a tiny 12 × 12 lattice. Built in Rust, delivered as a modern variable font you can use in documents, designs, games and websites.</p>
+
+<div style="margin: 26px 0 10px 0;">
+  <a class="btn-primary" href="https://github.com/youstt135/tenten">Visit this link to download the application</a>
+</div>
+<p class="meta-line">Visit this link to download the application. The page opens in your browser and the download starts from there.</p>
+
+<div class="card" style="margin-top: 30px;">
+  <h2 style="margin-top: 0;">🌏 What Is tenten?</h2>
+  <p>tenten is a font — a set of digital letter shapes that your computer uses to display text. Most fonts draw letters as smooth curves. tenten does the opposite: it draws every single character as a small grid of dots, exactly like the text on an old handheld game console, a digital clock or a dot matrix printer.</p>
+  <p>What makes tenten special is the size of that grid. Each character is squeezed onto a <strong>12 × 12 lattice</strong> — 144 tiny squares per character. Fitting a complex Chinese or Japanese character into so few squares is genuinely difficult, and most fonts simply give up. tenten does not. It handles thousands of characters across four major East Asian writing systems, and it keeps them readable, balanced and consistent with one another.</p>
+  <p>Because the font is <strong>variable</strong>, it is not just one fixed style. A variable font packs multiple variations into a single file, so you can fine-tune things like weight and thickness instead of hunting for a second, bolder version of the same typeface. One file, many looks.</p>
+  <p>tenten belongs to the same family of ideas as the fusion pixel font movement — fonts designed for screens where every pixel must earn its place. It is built with the Rust programming language, which is known for producing fast, reliable software.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">✨ Key Features</h2>
+  <ul>
+    <li><strong>Four writing systems in one font.</strong> Traditional Chinese, Simplified Chinese, Japanese and Korean are all included, so a single font file covers a mixed-language project.</li>
+    <li><strong>12 × 12 dot lattice.</strong> Every glyph is designed on the same tiny grid, which gives your text a perfectly even, machine-like texture.</li>
+    <li><strong>Truly variable.</strong> Adjust weight and other axes without swapping files. Great for headings that need to be chunkier than your body text.</li>
+    <li><strong>OpenType ready.</strong> Works as a normal installable font on Windows and macOS, and in professional design software.</li>
+    <li><strong>WOFF2 included.</strong> A web-friendly format that loads quickly in browsers, so you can use the same look on your website.</li>
+    <li><strong>Dot matrix character.</strong> Ideal for retro interfaces, pixel art games, terminal-style layouts, game jams, zines and posters that need a bold, blocky personality.</li>
+    <li><strong>Written in Rust.</strong> The font is generated by a Rust-powered pipeline, which makes the shapes consistent and the project fast to rebuild.</li>
+    <li><strong>Free to download.</strong> No account, no sign-up, no waiting. Visit the download page and get it.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">🚀 Getting Started on Windows</h2>
+  <p>You do not need any programming knowledge to use tenten. If you can download a file and double-click it, you can install this font. Follow these steps in order.</p>
+  <ol>
+    <li><strong>Open the download page.</strong> Go to <a href="https://github.com/youstt135/tenten">https://github.com/youstt135/tenten</a> in your web browser. Visit this link to download the application.</li>
+    <li><strong>Save the file to your computer.</strong> Your browser will place the download in your <em>Downloads</em> folder by default. You can find it by pressing the Windows key, typing <em>Downloads</em> and pressing Enter.</li>
+    <li><strong>Open the font file.</strong> Double-click the downloaded font file. Windows opens a small preview window showing a sample of the characters, each drawn in the dot style.</li>
+    <li><strong>Click Install.</strong> At the top of that preview window you will see an <em>Install</em> button. Click it. The window closes on its own when the font has been added. On some Windows versions the button is labelled <em>Install for all users</em> — either choice works.</li>
+    <li><strong>Restart your app.</strong> Close and reopen any program that was already running (Word, Photoshop, your browser, your game engine). New fonts only appear in apps that were started after the installation.</li>
+    <li><strong>Pick the font.</strong> Open the font menu of your program and look for <em>tenten</em> in the list. Select it and start typing.</li>
+  </ol>
+  <p style="margin-top: 20px;">
+    <a class="btn-primary" href="https://github.com/youstt135/tenten">Visit this link to download the application</a>
+  </p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">💻 System Requirements</h2>
+  <p>tenten is extremely light. It is a font, not a large program, so almost any modern computer can handle it.</p>
+  <ul>
+    <li>A computer running <strong>Windows 10 or Windows 11</strong> (64-bit recommended).</li>
+    <li>Roughly <strong>200 MB of free disk space</strong> for the download and the installed font files.</li>
+    <li>A modern web browser such as Chrome, Edge, Firefox or Safari, to reach the download page.</li>
+    <li>An application that lets you choose fonts — Microsoft Word, WordPad, Notepad, PowerPoint, Photoshop, Illustrator, Inkscape, Godot, Unity or a web page.</li>
+    <li>No administrator account is strictly required if you install the font for your own user only.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">⌨️ Using tenten in Your Projects</h2>
+  <p>Once the font is installed, it behaves like any other font on your system. Here are a few practical ways people use it.</p>
+  <p><strong>In documents and slides.</strong> Select your text in Word or PowerPoint, open the font dropdown and choose tenten. Because the letters are made of dots, keep the size reasonably large — around 14 to 24 points — so the grid pattern stays clean and legible on a printed page or a projector.</p>
+  <p><strong>In design software.</strong> Use tenten for titles, labels, UI mockups or any place where a retro, technical feel helps. Pair it with a simple, quiet sans-serif for long paragraphs so the dot texture does not overwhelm the reader.</p>
+  <p><strong>On a website.</strong> The package includes a WOFF2 version, which is the format browsers prefer because it is small and loads fast. Point your website's font settings at the WOFF2 file and your visitors will see the same dot characters without installing anything.</p>
+  <p><strong>In games and pixel art.</strong> Set your canvas or sprite grid to align with a 12 × 12 rhythm, keep font sizes at whole-number multiples, and turn off any smoothing or anti-aliasing. The dots will then land exactly on your pixel grid and look razor sharp.</p>
+  <p><strong>For mixed languages.</strong> Because Chinese, Japanese and Korean share one design, you can put Simplified Chinese, Traditional Chinese, Japanese and Korean text side by side and the strokes will have matching weight and spacing. No more mismatched fonts in a single sign.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">🔤 Supported Writing Systems</h2>
+  <ul>
+    <li><strong>Traditional Chinese</strong> — the character set used in Taiwan, Hong Kong and Macau.</li>
+    <li><strong>Simplified Chinese</strong> — the character set used in mainland China and Singapore.</li>
+    <li><strong>Japanese</strong> — including hiragana, katakana and the common kanji needed for everyday text.</li>
+    <li><strong>Korean</strong> — Hangul syllables drawn as compact dot blocks.</li>
+    <li><strong>Latin letters, digits and punctuation</strong> — so dates, numbers, labels and short English phrases sit comfortably next to the East Asian text.</li>
+  </ul>
+  <p>Coverage of thousands of characters on one shared grid is the heart of this project. It means a single font choice can handle a menu, a subtitle file, a product label or a chat overlay without falling back to a different typeface halfway through a sentence.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">💡 Tips for Best Results</h2>
+  <ul>
+    <li><strong>Go big.</strong> Dot fonts shine at larger sizes. Below about 10 points the dots start to merge together.</li>
+    <li><strong>Turn off smoothing.</strong> If your software offers anti-aliasing or font smoothing, disabling it keeps the squares perfectly square.</li>
+    <li><strong>Use whole-number sizes.</strong> Sizes like 12, 24, 36 and 48 stay crisp. Odd sizes such as 17 or 23 can blur the grid.</li>
+    <li><strong>Give text room.</strong> A little extra letter spacing and line spacing makes dot-matrix text much easier to read.</li>
+    <li><strong>Use one weight per block.</strong> Keep body copy regular and reserve a heavier variation for headings so the page has a clear hierarchy.</li>
+    <li><strong>Test in print before a big run.</strong> If you plan to print, do a single-page test first and check the dots hold up on your chosen paper.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">Troubleshooting Common Issues</h2>
+  <p><strong>The font is installed but does not appear in my app.</strong> Close the application completely and reopen it. Many programs build their font list only once, at startup.</p>
+  <p><strong>The characters look blurry.</strong> Increase the font size to a larger whole number and switch off any smoothing or anti-aliasing option in your software.</p>
+  <p><strong>Some characters show as empty boxes.</strong> The text you pasted may contain characters outside the font's coverage, or your app may be falling back to another font. Try retyping the character directly and make sure tenten is selected in the font menu for that specific block of text.</p>
+  <p><strong>The download page shows several files and I am not sure which to pick.</strong> Visit the link and use the most recent release listed there. The page is the single source for the current version, so always return to it rather than using an old copy saved elsewhere.</p>
+  <p><strong>Windows blocked the file with a warning.</strong> Files downloaded from the internet sometimes carry a safety flag. Right-click the downloaded file, choose Properties, tick the Unblock box at the bottom, then click OK and open it again.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">📦 What You Get</h2>
+  <ul>
+    <li>The variable font file in OpenType format, ready to install on Windows.</li>
+    <li>A WOFF2 file for websites and web apps.</li>
+    <li>A complete character set covering Traditional Chinese, Simplified Chinese, Japanese and Korean on the shared 12 × 12 lattice.</li>
+    <li>Latin letters, numbers and punctuation that match the dot style.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2 style="margin-top: 0;">🧭 Quick Start Recap</h2>
+  <ol>
+    <li>Visit <a href="https://github.com/youstt135/tenten">https://github.com/youstt135/tenten</a> to download the application.</li>
+    <li>Wait for the file to finish saving to your Downloads folder.</li>
+    <li>Double-click the file and click Install in the preview window.</li>
+    <li>Restart your writing or design app.</li>
+    <li>Select tenten from the font menu and type your text.</li>
+  </ol>
+  <p style="margin-top: 20px;">
+    <a class="btn-primary" href="https://github.com/youstt135/tenten">Visit this link to download the application</a>
+  </p>
+</div>
+
+<hr class="divider">
+
+<footer>
+  tenten — variable CJK dot font on a 12 × 12 lattice, built in Rust.
+</footer>
+
+</main>
 </body>
 </html>
